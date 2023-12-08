@@ -1,3 +1,4 @@
+// filter menu
 document.getElementById("openMenu").addEventListener("click", openMenu);
 document.getElementById("closeMenu").addEventListener("click", closeMenu);
 
@@ -6,4 +7,5 @@ document.getElementById("sideMenu").style.width = "50vw";
 }
 
 function closeMenu() {
-document.getElementById("sideMenu").style.width = "0";}
+document.getElementById("sideMenu").style.width = "0";
+}

@@ -1,7 +1,7 @@
 *{
   /* kleur tekst */
   --main-color: #000;
-  --secondary-color: #fff;
+  --secondary-color: #dbd8d8;
 
   /* achtergrond kleuren */
   --footer-header-nav-color: #c2edce;
@@ -16,7 +16,7 @@
   --margin-centered: 0 auto;
   --text-center: center;
 }
-
+/* basis styling */
 body{
   overflow-x: hidden;
   font-family: 'Gabarito', sans-serif;
@@ -84,6 +84,7 @@ footer{
   margin-top: auto;
 }
 
+/* nav menu */
 .menu-item{
   margin: 0 1em 0 0;
   vertical-align: middle;
@@ -94,7 +95,6 @@ footer{
   text-decoration: var(--decoratie-line);
 }
 
-
 .navmenu{
   padding-left: 1em;
   display: flex;
@@ -102,44 +102,8 @@ footer{
   justify-content: center;
   list-style: var(--decoratie-uit);
 }
-a.imglink {
-  margin: auto;
-}
 
-article{
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin-bottom: 1.5rem;
-  margin-top: 2em;
-  transition: 0.3s;
-}
-article:hover{
-  box-shadow: 1em 1em 1em 1em rgba(179, 179, 179, 0.596);
-  transition: 0.5s;
-}
-
-.articleButton{
-  margin: 5em;
-  padding: 0.3em 1em 0.3em 1em;
-  background: var(--footer-header-nav-color);
-  color: var(--main-color);
-  transition: 0.2s;
-  text-decoration: var(--decoratie-uit);
-}
-.articleButton:hover{
- color: var(--main-bg-color);
- background: var(--button-hover);
- text-decoration: var(--decoratie-line);
- transition: 0.4s;
-}
-
-.images{
-  height: 14.5rem;
-  margin: 0 auto;
-  width: 80vw;
-  max-width: 400px;
-}
+/* filter menu */
 
 .sideMenu {
   height: 100%;
@@ -161,7 +125,6 @@ article:hover{
     }
   }
 }
-
 .sideMenu a {
   padding: 0.5em 1em 0.5em 1em;
   text-decoration: var(--decoratie-uit);
@@ -170,55 +133,7 @@ article:hover{
   transition: 0.3s;
   
 }
-
-.menubtn{
-  font-size:1.9em;
-  cursor:pointer;
-  display:block;
-  margin: 3% 5%;
-}
-
-.about-us{
-  margin: var(--margin-centered);
-  max-width: 80vw;
-}
-
-form{
-  margin: var(--margin-centered);
-  width: 45vw;
-
-  & p{
-    margin: 5px;
-  }
-}
-.map{
-  margin: var(--margin-centered);
-  width: 300px;
-  height: 450px;
-  margin: auto;
-}
-
-.card-info{
-  width: 100vw;
-  position: relative;
-  background: rgb(224, 223, 223);
-  margin-top: 1rem ;
-
-  & img{
-    width: 100vw;
-    height: 17rem;
-  }
-  & .stats{
-    display: flex;
-  }
-  & .bottom-buttons{
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-  }
-
-}
-
+ /* laptop style */
 @media only screen and (min-width: 510px) {
   .flex-main{
     display: flex;
@@ -268,7 +183,7 @@ form{
     width: 50vw;
   }
 }
-
+/* max breedte filter menu */
 @media only screen and (min-width: 865px) {
   .sideMenu{
     max-width: 20vw;
@@ -279,4 +194,92 @@ form{
   .sideMenu{
     max-width: 15vw;
   }
+}
+
+/* articles telefoon */
+.menubtn{
+  font-size:1.9em;
+  cursor:pointer;
+  display:block;
+  margin: 3% 5%;
+}
+a.imglink {
+  margin: auto;
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+  margin-top: 2em;
+  transition: 0.3s;
+}
+article:hover{
+  box-shadow: 1em 1em 1em 1em rgba(179, 179, 179, 0.596);
+  transition: 0.5s;
+}
+
+.articleButton{
+  margin: 5em;
+  padding: 0.3em 1em 0.3em 1em;
+  background: var(--footer-header-nav-color);
+  color: var(--main-color);
+  transition: 0.2s;
+  text-decoration: var(--decoratie-uit);
+}
+.articleButton:hover{
+ color: var(--main-bg-color);
+ background: var(--button-hover);
+ text-decoration: var(--decoratie-line);
+ transition: 0.4s;
+}
+
+.images{
+  height: 14.5rem;
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 400px;
+}
+
+
+.about-us{
+  margin: var(--margin-centered);
+  max-width: 80vw;
+}
+
+form{
+  margin: var(--margin-centered);
+  width: 45vw;
+
+  & p{
+    margin: 5px;
+  }
+}
+.map{
+  margin: var(--margin-centered);
+  width: 300px;
+  height: 450px;
+  margin: auto;
+}
+
+.card-info{
+  width: 100vw;
+  position: relative;
+  background: rgb(224, 223, 223);
+  margin-top: 1rem ;
+
+  & img{
+    width: 100vw;
+    height: 17rem;
+  }
+  & .stats{
+    display: flex;
+  }
+  & .bottom-buttons{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
+
 }
