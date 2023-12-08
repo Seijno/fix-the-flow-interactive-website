@@ -133,69 +133,6 @@ footer{
   transition: 0.3s;
   
 }
- /* laptop style */
-@media only screen and (min-width: 510px) {
-  .flex-main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    overflow: hidden;
-  }
-  article{
-    display: table-cell;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .card-info{
-    max-width: 50vw;
-    margin: var(--margin-centered);
-    margin-top: 1rem ;
-
-    & img{
-      width: 50vw;
-    }
-    & .tags-stats{
-      width: 50%;
-    }
-  }
-  .sideMenu{
-    max-width: 30vw;
-  }
-  .images{
-    max-width: 350px;
-  }
-  .menu-item{
-    margin: 0 2em 0 0;
-  }
-  .about-us{
-    max-width: 60vw;
-  }
-  form{
-    width: 15vw;
-  }
-  .info{
-    display: grid;
-    height: 20vh;
-    margin-top: 10%;
-  }
-  .card-info{
-    width: 50vw;
-  }
-}
-/* max breedte filter menu */
-@media only screen and (min-width: 865px) {
-  .sideMenu{
-    max-width: 20vw;
-  }
-}
-
-@media only screen and (min-width: 1120px) {
-  .sideMenu{
-    max-width: 15vw;
-  }
-}
-
 /* articles telefoon */
 .menubtn{
   font-size:1.9em;
@@ -282,4 +219,66 @@ form{
     bottom: 1rem;
   }
 
+}
+ /* laptop style */
+@media only screen and (min-width: 510px) {
+  .flex-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+  }
+  article{
+    display: table-cell;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .card-info{
+    max-width: 50vw;
+    margin: var(--margin-centered);
+    margin-top: 1rem ;
+
+    & img{
+      width: 50vw;
+    }
+    & .tags-stats{
+      width: 50%;
+    }
+  }
+  .sideMenu{
+    max-width: 30vw;
+  }
+  .images{
+    max-width: 350px;
+  }
+  .menu-item{
+    margin: 0 2em 0 0;
+  }
+  .about-us{
+    max-width: 60vw;
+  }
+  form{
+    width: 15vw;
+  }
+  .info{
+    display: grid;
+    height: 20vh;
+    margin-top: 10%;
+  }
+  .card-info{
+    width: 50vw;
+  }
+}
+/* max breedte filter menu */
+@media only screen and (min-width: 865px) {
+  .sideMenu{
+    max-width: 20vw;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .sideMenu{
+    max-width: 15vw;
+  }
 }
