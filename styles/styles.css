@@ -44,6 +44,9 @@ h2{
 h3{
   font-size: 1.5rem;
 }
+.bold{
+  font-weight: bold;
+}
 
 
 .material-symbols-outlined {
@@ -81,6 +84,11 @@ footer{
   grid-area: f;
   background: var(--footer-header-nav-color);
   text-align: var(--text-center);
+  margin-top: auto;
+  height: 7rem;
+}
+
+.footer-container{
   margin-top: auto;
 }
 
@@ -132,6 +140,9 @@ footer{
   display: block;
   transition: 0.3s;
   
+}
+#closeMenu{
+  cursor: pointer;
 }
 /* articles telefoon */
 .menubtn{
