@@ -9,3 +9,12 @@ document.getElementById("sideMenu").style.width = "50vw";
 function closeMenu() {
 document.getElementById("sideMenu").style.width = "0";
 }
+
+//like systeem
+
+var change = document.querySelector('#likebtn');
+change.addEventListener('click', likeChange);
+function likeChange() {
+  change.classList.toggle('changeBtn');
+}
+console.log("test");
