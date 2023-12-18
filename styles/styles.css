@@ -168,7 +168,7 @@ article{
   transition: 0.3s;
 }
 article:hover{
-  box-shadow: 1em 1em 1em 1em rgba(179, 179, 179, 0.596);
+  box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(199, 198, 198, 0.596);
   transition: 0.5s;
 }
 
@@ -340,7 +340,3 @@ form{
 }
 
 /*js animaties*/
-.activeHeart{
-  background: var(--active-heart);
-  transition: 1s;
-}
