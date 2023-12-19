@@ -142,9 +142,14 @@ footer{
   text-decoration: var(--decoratie-uit);
   font-size: 0.8em;
   display: block;
-  transition: 0.3s;
-  
+  transition: 0.3s; 
 }
+/* .sidePrompt{
+  position: absolute;
+  margin: var(--margin-centered);
+  right: 88%;
+  animation-delay: 0.7s initial inherit;
+} */
 #closeMenu{
   cursor: pointer;
 }
@@ -262,6 +267,7 @@ form{
     height: 11rem;
     }
 }
+
  /* laptop style */
 @media only screen and (min-width: 510px) {
   .flex-main{
