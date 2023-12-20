@@ -2,6 +2,8 @@
   /* kleur tekst */
   --main-color: #000;
   --secondary-color: #dbd8d8;
+  --current-menu: rgb(26, 82, 65);
+  --breadcrumb: rgb(173, 173, 173);
 
   /* achtergrond kleuren */
   --footer-header-nav-color: #c2edce;
@@ -64,9 +66,10 @@ h3{
 #grid{
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows:4em 6fr 4em;
+  grid-template-rows:4em 2em 6fr 4em;
   grid-template-areas: 
     "h h"
+    "n n"
     "m m"
     "f f"; 
 }
@@ -79,6 +82,11 @@ nav{
   position: fixed;
   top: 1rem;
   left: 0.5rem;
+}
+.subMenu{
+  grid-area: n;
+  background: var(--main-bg-color);
+  justify-content: space-between;
 }
 main{
   grid-area: m;
@@ -97,6 +105,20 @@ footer{
 }
 
 /* nav menu */
+.breadCrumb{
+  margin-top: var(--margin-centered);
+  margin-left: 15vw;
+  margin-right: 15vw;
+  height: 2em;
+  color: var(--breadcrumb);
+}
+.breadCrumb a{
+  color: var(--breadcrumb);
+  text-decoration: var(--decoratie-uit);
+}
+.breadCrumb a:hover{
+  text-decoration: var(--decoratie-line);
+}
 .menu-item{
   margin: 0 1em 0 0;
   vertical-align: middle;
@@ -113,6 +135,10 @@ footer{
   flex-direction: row;
   justify-content: center;
   list-style: var(--decoratie-uit);
+}
+
+.current{
+  color: var(--current-menu);
 }
 
 /* filter menu */
@@ -152,6 +178,10 @@ footer{
 } */
 #closeMenu{
   cursor: pointer;
+}
+#openMenu{
+  margin-left: 5vw;
+  text-decoration: var(--decoratie-uit);
 }
 /* articles telefoon */
 .menubtn{
@@ -203,6 +233,7 @@ article:hover{
 .about-us{
   margin: var(--margin-centered);
   max-width: 80vw;
+  line-height: 1.5rem;
 }
 
 form{
@@ -233,28 +264,30 @@ form{
   & .stats{
     display: flex;
   }
-  & .bottom-buttons{
-    position: absolute;
-    right: 1.5rem;
-    bottom: 1rem;
+
+  & .upper-button{
+    position: relative;
   }
   & .like{
     position: absolute;
-    bottom: 12.5rem;
-    right: 1.5rem;
-    border: solid 1px black;
+    top: 0;
+    right: 0.5rem;
+    border: solid 1px rgba(0, 0, 0, 0);
     width: 3rem;
     text-align: var(--text-center);
     background: var(--inactive-like);
     transition: 1s;
     cursor: pointer;
   }
+  & .back{
+    position: absolute;
+    bottom: 0;
+    right: 0.5rem;
+  }
   & .changeBtn{
     background: var(--active-like);
     transition: 1s;
   }
-
-
 }
 .gerelanteerd{
   margin: var(--margin-centered);
@@ -263,7 +296,7 @@ form{
 .alsoImg{
   margin: var(--margin-centered);
     & img{
-    width: 22rem;
+    width: 100%;
     height: 11rem;
     }
 }
@@ -294,6 +327,13 @@ form{
       width: 80%;
     }
   }
+  .alsoImg{
+    margin: var(--margin-centered);
+      & img{
+      width: 100%;
+      height: 11rem;
+      }
+  }
   .gerelanteerd{
     margin: var(--margin-centered);
     width: 30vw;
@@ -317,6 +357,9 @@ form{
     display: grid;
     height: 20vh;
     margin-top: 10%;
+  }
+  .opmerking{
+    width: 90%;
   }
 }
 /* netjes formaat voor de articles */
